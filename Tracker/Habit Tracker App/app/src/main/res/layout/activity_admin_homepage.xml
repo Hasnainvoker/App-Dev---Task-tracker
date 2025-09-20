@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    tools:context=".admin_homepage">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        app:menu="@menu/menu">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+
+        android:background="@color/top_bg"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin HomePage"
+            android:paddingTop="1dp"
+            android:height="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All about the App HomePage"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:height="20dp"
+            android:paddingTop="2dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_marginTop="90dp">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:background="@drawable/linear_bg"
+            android:layout_marginTop="30dp"
+            android:padding="3dp"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD CHALLENGES"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    android:textSize="23sp"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/white"
+                    android:backgroundTint="#916BD5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/btnAddCommunityChallenges"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin Can Add Challanges "
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:background="@drawable/button2_bg"
+            android:layout_marginTop="30dp"
+            android:padding="3dp"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:text="VIEW USERS"
+                    android:textStyle="bold"
+                    android:textSize="23sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/btnViewUsers"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/white"
+                    android:backgroundTint="#B08D27"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin can View User Profile"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Custom Habit Heading TextView -->
+    <TextView
+        android:id="@+id/textView_custom_habits_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Habits"
+        android:background="@drawable/button2_bg"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:elevation="20dp"
+        android:padding="10dp"
+        />
+
+    <!-- EditText fields for custom habits -->
+    <EditText
+        android:id="@+id/editTexthabitname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Habit Name"
+        android:minHeight="48dp"
+        android:background="@drawable/button3_bg"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextquestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Question"
+        android:minHeight="48dp"
+        android:background="@drawable/button3_bg"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextfrequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Frequency"
+        android:minHeight="48dp"
+        android:background="@drawable/button3_bg"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:padding="15dp"/>
+
+    <!-- Reminder TextView -->
+    <EditText
+        android:id="@+id/editTextNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:height="80dp"
+        android:hint="Notes"
+        android:background="@drawable/button3_bg"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/textViewReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reminder:"
+        android:background="@drawable/button2_bg"
+        android:elevation="20dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- RadioGroup for reminder options -->
+    <RadioGroup
+        android:id="@+id/radioGroupReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:background="@drawable/button3_bg"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:background="@drawable/button3_bg"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:padding="15dp"/>
+    </RadioGroup>
+
+    <!-- SET Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_set"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/login_ui"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="SET"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+</LinearLayout>

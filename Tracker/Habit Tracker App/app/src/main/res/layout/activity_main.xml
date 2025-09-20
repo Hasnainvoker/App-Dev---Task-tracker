@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/signup_bg"
+    tools:ignore="ExtraText"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HabitGuru"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_open"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/logo1"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="3dp"
+        app:civ_border_color="@color/yellow"
+        android:layout_below="@id/appname"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/text_quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_below="@id/image_open"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"/>
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:layout_below="@id/text_quote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_ui"
+        android:paddingLeft="90dp"
+        android:paddingRight="90dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_login"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_signup"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="80dp"
+        android:paddingLeft="97dp"
+        android:paddingRight="97dp"
+        android:background="@drawable/login_ui"
+        android:text="LOGIN"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

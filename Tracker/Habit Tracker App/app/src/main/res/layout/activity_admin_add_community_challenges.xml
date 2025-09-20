@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".admin_homepage"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#d4d4d4">
+
+    <TextView
+        android:id="@+id/textViewName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewName1"
+        android:layout_marginTop="8dp"
+        android:hint="Enter name"
+        android:background="@drawable/button3_bg"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:padding="7dp"/>
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"
+        android:text="Description"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDescription"
+        android:layout_marginTop="8dp"
+        android:hint="Enter description"
+        android:background="@drawable/button3_bg"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:padding="7dp"/>
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDescription"
+        android:layout_marginTop="16dp"
+        android:text="Select Date"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/textViewDate"
+        android:layout_margin="10dp" />
+
+
+    <TextView
+        android:id="@+id/textViewPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datePicker"
+        android:layout_marginTop="48dp"
+        android:text="Place and time:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPlace"
+        android:layout_marginTop="10dp"
+        android:hint="Enter place"
+        android:background="@drawable/button3_bg"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:padding="7dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPlace"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="ADD"
+        android:background="@drawable/login_ui"/>
+
+
+</RelativeLayout>

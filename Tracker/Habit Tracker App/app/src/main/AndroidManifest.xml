@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.labpro" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS"
+        tools:targetApi="31" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Labpro"
+        tools:targetApi="31" >
+        <activity
+            android:name=".checkuser"
+            android:exported="false" />
+        <activity
+            android:name=".userchallenge"
+            android:exported="false" />
+        <activity
+            android:name=".logactivity"
+            android:exported="false" /> <!-- Activities -->
+        <activity
+            android:name=".notify"
+            android:exported="false" />
+        <activity
+            android:name=".user_community_challenges"
+            android:exported="false" />
+        <activity
+            android:name=".admin_DeleteUsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin_ViewUsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin_addCommunityChallenges"
+            android:exported="false" />
+        <activity
+            android:name=".admin_homepage"
+            android:exported="false" />
+        <activity
+            android:name=".progress_listview"
+            android:exported="false" />
+        <activity
+            android:name=".graph"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".myactivities"
+            android:exported="false" />
+        <activity
+            android:name=".sports"
+            android:exported="false" />
+        <activity
+            android:name=".productivity"
+            android:exported="false" />
+        <activity
+            android:name=".hygiene"
+            android:exported="false" />
+        <activity
+            android:name=".health"
+            android:exported="false" />
+        <activity
+            android:name=".progress"
+            android:exported="false" />
+        <activity
+            android:name=".mainhome"
+            android:exported="false" />
+        <activity
+            android:name=".YourHabitsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomHabitsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommonHabitsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".addhabits"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- BroadcastReceiver -->
+        <receiver
+            android:name=".NotificationHelper"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.labpro.NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

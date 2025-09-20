@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">labpro</string>
+    <string-array name="sports">
+        <item>Cricket</item>
+        <item>Football</item>
+        <item>Tennis</item>
+        <item>Basketball</item>
+        <item>Table Tennis</item>
+    </string-array>
+    <string-array name="health">
+        <item>Check Up</item>
+        <item>Walking</item>
+        <item>Running</item>
+        <item>Meals</item>
+        <item>GYM</item>
+    </string-array>
+    <string-array name="hygiene">
+        <item>Brushing</item>
+        <item>Shower</item>
+        <item>Shaving</item>
+        <item>Trim Nails</item>
+        <item>Change Sheets</item>
+    </string-array>
+    <string-array name="productivity">
+        <item>Working</item>
+        <item>Reading Books</item>
+        <item>Writing</item>
+        <item>Studying</item>
+        <item>Coding</item>
+    </string-array>
+
+    <string name="dialog_message">Welcome to Alert Dialog</string>
+    <string name="dialog_title">Javatpoint Alert Dialog</string>
+</resources>
